@@ -14,14 +14,18 @@ header{
 h1, h2, h3{
     font-family: "Oswald", sans-serif;
     color:darkkhaki;
+    text-align: center;
         
 }
+
+
 
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*margin-right: auto;*/
 }
 
 /* Barra de navegación */
@@ -72,12 +76,107 @@ h1, h2, h3{
 
 
 
-li{
-    display: inline-block;
+/*Listas en INICIO y NOSOTROS*/
 
+ul {
+  list-style-type: disc; /* puntos */
+  padding-left: 40px;    /* importante para que se vean */
+  color: #ffffff;
 }
+
+
+
+
 
 p{
     color: azure;
     font-size: larger;
+    text-align: center;
+}
+
+/* TABLA */
+
+table{
+
+  margin: auto;
+}
+
+table, th, tr, td {
+  border: 1px solid white;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px; /* aumenta el tamaño de las celdas */
+  margin-top: 3%;
+  
+}
+
+footer{
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Sección de productos */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de producto */
+.productos article {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover */
+.productos article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen del producto */
+.img-producto {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Título */
+.productos h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Descripción */
+.productos p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #dddddd;
+}
+
+/* Enlace */
+.productos a {
+  display: inline-block;
+  text-decoration: none;
+  color: #00e676;
+  font-weight: bold;
+  border: 1px solid #00e676;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.productos a:hover {
+  background-color: #00e676;
+  color: #000;
 }
